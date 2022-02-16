@@ -31,8 +31,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     		<input type=file name=file>
     		<input class = "btn"  type=submit value=Classify>
   		</form>
-      <p><a class="w3-text-grey" href="static/example-csv.csv" download="example-csv.csv">Download an example CSV data file</a></p>
-      <p><a class="w3-text-grey" href="/static/example-excel.xlsx" download="example-excel.xlsx">Download another example EXCEL data file</a></p>
+      <p><a class="w3-text-grey" href="{{ url_for('static', filename='example-csv.csv') }}" download="example-csv.csv">Download an example CSV data file</a></p>
+      <p><a class="w3-text-grey" href="{{ url_for('static', filename='example-excel.xlsx') }}" download="example-excel.xlsx">Download another example EXCEL data file</a></p>
     </div>
   </div>
 </div>
